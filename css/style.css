@@ -1,0 +1,50 @@
+body {
+  text-align: center;
+}
+.card {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+.form-control:not(:disabled):not([readonly]) {
+  background-color: #fdfdfd;
+}
+.form-control:not(:disabled):not([readonly]):focus {
+  background-color: #fff;
+}
+.form-control:disabled,
+.form-control[readonly] {
+  background-color: #f7f7f7;
+}
+.form-control {
+  border: none;
+  border-bottom: 1px solid #999;
+  border-radius: 0;
+}
+.form-control:focus {
+  border-color: #007bff;
+}
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  box-shadow: none;
+  text-transform: uppercase;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+.btn-primary:active {
+  background-color: #0062cc;
+  border-color: #005cbf;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  max-width: 600px; /* Elige el ancho máximo deseado */
+}
+

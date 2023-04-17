@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test de Rorschach</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand mx-auto">Test de Rorschach</a>
+    </nav>
+    <br />
+    <br />
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card shadow-sm">
+              <img
+                src="https://images.fineartamerica.com/images-medium-large-5/2-rorschach-test-card-no-8-science-source.jpg"
+                class="card-img-top"
+                alt="Test de Rorschach"
+              />
+              <div class="card-body">
+                <h5 class="card-title">¿Cómo interpretas esta imagen? #8</h5>
+                <form>
+                  <div class="form-group">
+                    <label for="interpretacion"
+                      >Escribe tu interpretación:</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="interpretacion"
+                      rows="5"
+                      maxlength="500"
+                    ></textarea>
+                    <small
+                      id="interpretacion-help"
+                      class="form-text text-muted"
+                    >
+                      <span id="contador" class="text-muted">500/500</span>
+                    </small>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.12.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier@1.0.1/dist/knn-classifier.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
